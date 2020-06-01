@@ -1,23 +1,27 @@
-let cnt = 0
-document.getElementById('listen').addEventListener('click',() => {
-    if(localStorage.getItem('counter'))
+let countnum;
+const check = parseInt(localStorage.getItem('counter'))
+
+const countFunc = () => {
+    if(check)
     {
-        val = parseInt(localStorage.getItem('counter'));
-        val += 1
-        localStorage.setItem('counter',val)
+        countnum = parseInt(localStorage.getItem('counter'));
+        countnum += 1
+        localStorage.setItem('counter',countnum)
     }
     else{
-        val = 1
-        localStorage.setItem('counter',val)
+        countnum = 1
+        localStorage.setItem('counter',countnum)
     }
     
     const count = document.getElementById('count')
-    count.innerHTML = val
-})
+    count.innerText = `Total Count ${countnum}`
+}
+
+document.getElementById('listen').addEventListener('click', countFunc)
 
 window.onload = 
     () => {
-        val = parseInt(localStorage.getItem('counter'));
+        countnum = parseInt(localStorage.getItem('counter'));
         const count = document.getElementById('count')
-        count.innerHTML = val
+        count.innerText = `Total Count ${countnum}`
     }

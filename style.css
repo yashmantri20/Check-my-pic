@@ -13,7 +13,7 @@ body {
    padding:1px;
    color: white;
 }
-#body {
+#content {
    margin-top: 25px;
    text-align: center;
    padding-bottom:50px;   /* Height of the footer */
@@ -25,4 +25,9 @@ body {
    height:50px;   /* Height of the footer */
    background:black;
    color: white;
+}
+
+#listen{
+    width: 500px;
+    height: 500px;
 }
