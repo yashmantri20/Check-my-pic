@@ -14,7 +14,7 @@ body {
    color: white;
 }
 #content {
-   margin-top: 25px;
+   margin-top: 0px;
    text-align: center;
    padding-bottom:50px;   /* Height of the footer */
 }
@@ -30,4 +30,16 @@ body {
 #listen{
     width: 500px;
     height: 500px;
+}
+
+#heading{
+   text-align: center;
+   font-weight: 800;
+   margin : 5px;
+   font-size: 25px;
+}
+
+article{
+   font-weight: 800;
+   font-size: 20px;
 }
