@@ -43,3 +43,16 @@ article{
    font-weight: 800;
    font-size: 20px;
 }
+
+.column {
+   float: left;
+   width: 25%;
+   padding: 10px;
+ }
+
+ #row:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+

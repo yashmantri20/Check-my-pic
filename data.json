@@ -1,0 +1,16 @@
+{
+    "images": [
+        {
+            "name": "image1",
+            "img1": "https://cdn.pixabay.com/photo/2015/06/19/21/24/the-road-815297__340.jpg"
+        },
+        {
+            "name": "image2",
+            "img1": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg"
+        },
+        {
+            "name": "image3",
+            "img1": "https://images.unsplash.com/photo-1535332371349-a5d229f49cb5?ixlib=rb-1.2.1&w=1000&q=80"
+        }
+    ]
+}

@@ -8,7 +8,7 @@
     <div id="container">
         <header id="header"><p>Header</p></header>
 
-        <section>
+        <!-- <section>
         <article id="heading">Image 1</article>
         <div id="content">
             <img src="t.jpg" alt="Girl in a jacket" id='listen'>
@@ -26,12 +26,30 @@
                 <div id="count1"></div>
                 <article>yash</article>
             </div>
-        </section><br>
+        </section> -->
+        <div id="row">
+            
+        </div>
+        <section>
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <img id="expandedImg" style="width:50%;height: 50%;">
+        </section>
+        <br><br/><br><br/>
 
         <footer id="footer"><p>Footer</p></footer>
      </div>
 
-<script src="main.js"></script>
+     <script src="main.js"></script>
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+     <script>
+        function myFunction(imgs) {
+            countFunc(imgs.id)
+            var expandImg = document.getElementById("expandedImg");
+            expandImg.src = imgs.src;
+            expandImg.parentElement.style.display = "block";
+        }
+        </script>
 </body>
 
 </html>
